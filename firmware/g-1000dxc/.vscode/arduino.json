@@ -1,0 +1,7 @@
+{
+    "configuration": "FlashFreq=80,UploadSpeed=921600,DebugLevel=info,PartitionScheme=default",
+    "board": "esp32:esp32:featheresp32",
+    "programmer": "esp32:esptool",
+    "output": "../build",
+    "sketch": "g-1000dxc.ino"
+}
