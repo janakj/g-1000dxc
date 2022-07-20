@@ -1,4 +1,4 @@
-// An ESP32-based controller for the Yeasu G-1000DX antenna rotator
+// An ESP32-based controller for the Yeasu G-1000DXC antenna rotator
 //
 // Copyright 2022 Jan Janak <jan@janakj.org>
 //
