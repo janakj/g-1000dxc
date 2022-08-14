@@ -8,15 +8,33 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<h1>Rotator</h1>
-		<p>Antenna: <strong>%ANTENNA% (%ANTENNA_RAW%)</strong></p>
-		<p>Indicator: <strong>%INDICATOR%</strong></p>
-		<p>Preset: <strong>%PRESET% (%PRESET_RAW%)</strong></p>
-		<p>Speed: <strong>%SPEED%</strong></p>
-		<p>Azimut: <strong>%AZIMUTH%</strong></p>
-		<form method="GET" action="/set">
+		<h1>Yeasu G-1000DXC antenna rotator</h1>
+		<table>
+			<thead>
+				<th>Parameter</th><th>Value</th><th>Raw value</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Antenna</td><td>%ANTENNA%</td><td>%ANTENNA_RAW%</td>
+				</tr>
+				<tr>
+					<td>Indicator</td><td>%INDICATOR%</td><td>%INDICATOR_RAW%</td>
+				</tr>
+				<tr>
+					<td>Preset knob</td><td>%PRESET_KNOB%</td><td>%PRESET_KNOB_RAW%</td>
+				</tr>
+				<tr>
+					<td>Speed</td><td>%SPEED%</td><td>%SPEED_RAW%</td>
+				</tr>
+				<tr>
+					<td>Preset value</td><td>%PRESET%</td><td></td>
+				</tr>
+			</tbody>
+		</table>
+		<form method="GET" action="/set-azimuth">
+			<label>Azimuth</label>
 			<input type="number" id="azimuth" name="azimuth">
-			<input type='submit' value='Set'>
+			<input type="submit" value="Rotate">
 		</form>
 	</body>
 </html>
