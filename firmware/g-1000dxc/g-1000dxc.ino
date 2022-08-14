@@ -44,17 +44,15 @@
 //     plt.show()
 
 // TODO
-// * Automatically scale PWM output values depending on the PWM resolution
 // * Design a better web UI and API for calibration
 // * Make critical parameters run-time configurable and stored in NVM
 // * Implement OTA firmware update
-// * Add mapping classes between 0-450 and 0-360
 
 
 // ======== The following values may need to be configured ========
 
-//#define WIFI_SSID     "Queeg"
-//#define WIFI_PASSWORD "spravedlnosti14"
+//#define WIFI_SSID     "<wifi_ssid>"
+//#define WIFI_PASSWORD "<wifi_password>"
 //#define MDNS_NAME     "rotator"
 
 // The size of the overlap region in degrees
