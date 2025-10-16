@@ -1,4 +1,4 @@
-// An ESP32-based controller for the Yeasu G-1000DXC antenna rotator
+// An ESP32-based controller for the Yaesu G-1000DXC antenna rotator
 //
 // Copyright 2022 Jan Janak <jan@janakj.org>
 //
@@ -601,7 +601,7 @@ static void init_http()
 void setup()
 {
     Serial.begin(115200);
-    Serial.println("Starting Yeasu G-1000DXC controller");
+    Serial.println("Starting Yaesu G-1000DXC controller");
 
     // The ADC inputs on the ESP32 are fairly susceptible to noise. To mitigate
     // some of the noise, we reconfigure the ADC1 peripheral to 10 bits (values
@@ -653,7 +653,7 @@ void setup()
     static Gpio led_(LED);
     led = &led_;
 
-    // The Yeasu G-1000DXC rotator has a 90 degree overlap, i.e., it can move
+    // The Yaesu G-1000DXC rotator has a 90 degree overlap, i.e., it can move
     // between 0 and 450 degress. The overlap indicator is a LED connected to
     // the Feather board that is turned on while the rotator is within the
     // overlap region.
